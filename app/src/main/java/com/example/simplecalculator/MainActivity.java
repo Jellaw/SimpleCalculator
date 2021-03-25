@@ -38,8 +38,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     if(b==0){
                         Toast.makeText(getApplicationContext(), "Nhap lai b khac 0 " , Toast.LENGTH_LONG).show();
                         result.setText("N/A");
-                    } else rel = a/b;
-                }
+                    } else {
+                        rel = a/b;
+                        result.setText(rel.toString());
+                    }
+                } else
                 result.setText(rel.toString());
             }
         });
